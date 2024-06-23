@@ -1,4 +1,4 @@
-<span style="font-family: verdana, geneva, sans-serif;">/*  import google fonts */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 /* latin-ext */
 @font-face {
@@ -259,4 +259,4 @@ h1{
 .doctors_name:active{
   border: 2px solid blueviolet;
   transition: 0.4s;
-}</span>
+}

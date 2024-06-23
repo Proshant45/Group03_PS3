@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="cs/reg.css">
+</head>
+<body>
+<div class="container">
+    <h1>Event Registration Form</h1>
+    <form action="/submit" method="post">
+        <!-- Personal Information -->
+        <h2>Personal Information</h2>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="non-binary">Non-binary</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+        </select>
+
+        <!-- Address -->
+        <h2>Address</h2>
+        <label for="address">Street Address</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="state">State/Province</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="zip">Postal/ZIP Code</label>
+        <input type="text" id="zip" name="zip" required>
+
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" required>
+
+        <!-- Event Participation Details -->
+        <h2>Event Participation Details</h2>
+        <label>Have you attended this event before?</label>
+        <label><input type="radio" name="attended-before" value="yes" required> Yes</label>
+        <label><input type="radio" name="attended-before" value="no" required> No</label>
+
+        <label for="hear-about">How did you hear about this event?</label>
+        <select id="hear-about" name="hear-about" required>
+            <option value="social-media">Social Media</option>
+            <option value="friend-family">Friend/Family</option>
+            <option value="website">Website</option>
+            <option value="advertisement">Advertisement</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="sessions">Which sessions are you interested in attending? (Select all that apply)</label>
+        <label><input type="checkbox" name="sessions" value="session1"> Session 1</label>
+        <label><input type="checkbox" name="sessions" value="session2"> Session 2</label>
+        <label><input type="checkbox" name="sessions" value="session3"> Session 3</label>
+
+        <label for="diet">Do you have any dietary restrictions?</label>
+        <select id="diet" name="diet" required>
+            <option value="none">None</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="gluten-free">Gluten-Free</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="special-requirements">Do you have any special requirements or need assistance?</label>
+        <textarea id="special-requirements" name="special-requirements"></textarea>
+
+        <!-- Payment Details -->
+        <h2>Payment Details</h2>
+        <label for="card-name">Name on Card</label>
+        <input type="text" id="card-name" name="card-name" required>
+
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" name="card-number" required>
+
+        <label for="expiry-date">Expiration Date</label>
+        <input type="month" id="expiry-date" name="expiry-date" required>
+
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" required>
+
+        <!-- Emergency Contact Information -->
+        <h2>Emergency Contact Information</h2>
+        <label for="emergency-name">Emergency Contact Name</label>
+        <input type="text" id="emergency-name" name="emergency-name" required>
+
+        <label for="emergency-relationship">Relationship to Participant</label>
+        <input type="text" id="emergency-relationship" name="emergency-relationship" required>
+
+        <label for="emergency-phone">Emergency Contact Phone Number</label>
+        <input type="tel" id="emergency-phone" name="emergency-phone" required>
+
+        <!-- Consent and Agreement -->
+        <h2>Consent and Agreement</h2>
+        <label><input type="checkbox" name="terms" required> I agree to the event's terms and conditions.</label>
+        <label><input type="checkbox" name="privacy" required> I have read and agree to the privacy policy.</label>
+        <label><input type="checkbox" name="photo-release"> I consent to be photographed and recorded during the event.</label>
+        <label><input type="checkbox" name="photo-release-no"> I do not consent to be photographed and recorded during the event.</label>
+
+        <!-- Signature -->
+        <label for="signature">Participant Signature</label>
+        <input type="text" id="signature" name="signature" required>
+
+        <label for="signature-date">Date</label>
+        <input type="date" id="signature-date" name="signature-date" required>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+</body>
+</html>

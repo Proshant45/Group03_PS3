@@ -1,0 +1,152 @@
+/* psychiatrist.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+}
+
+header {
+    background: url('AC237923-20AA-46BE-99AE-79314710435A_4_5005_c.jpeg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 50px;
+    text-align: center;
+    position: relative;
+    height: 200px; /* Adjust height as needed */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: black; /* Ensuring the text is readable */
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+main {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.specialists {
+    text-align: center;
+}
+
+.specialists h1 {
+    color: black;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.specialists-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if there's not enough space */
+    justify-content: space-around; /* Adjusts spacing between items */
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px; /* Adjust as needed */
+}
+
+.specialist-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    width: calc(30% - 40px); /* Adjust width as needed */
+    transition: transform 0.2s;
+    flex-grow: 1; /* Makes sure the cards take available space */
+}
+
+.specialist-card:hover {
+    transform: scale(1.05);
+}
+
+.specialist-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+}
+
+.specialist-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.specialist-info h2 {
+    font-size: 1.5em;
+    color: rgb(5, 104, 5);
+    margin: 10px 0;
+}
+
+.specialist-info p {
+    font-size: 1em;
+    color: grey;
+    margin: 5px 0;
+}
+
+.specialist-info .role {
+    font-weight: bold;
+    color: rgb(55, 159, 55);
+}
+
+.specialist-info .location,
+.specialist-info .approach,
+.specialist-info .works-with,
+.specialist-info .specialties,
+.specialist-info .appointment {
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.specialist-info .appointment {
+    margin-top: 15px;
+    font-style: italic;
+}
+
+
+.appointment-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px; /* Add some margin to separate it from other elements */
+}
+
+.appointment-button:hover {
+    background-color: #218838;
+}
+
+.appointment-button {
+    display: inline-block;
+    background-color: rgb(58, 126, 58);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 20px; /* Add some margin to separate it from other elements */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.appointment-button:hover {
+    background-color: rgb(9, 99, 9);
+}
